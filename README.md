@@ -1,28 +1,29 @@
+<img align="right" src="media/logo.svg" width="76" alt="Mistletoe Mail stamp">
+
 # Mistletoe Mail
 
-The bakery, post office and toy shop are still lit on Christmas Eve. Watch their windows flash, then ring the same doorbells to make the last deliveries of the night. The route starts with two stops and grows to six. Finish it and the village plays *Jingle Bells*.
+A Christmas Eve memory game for the [Holiday Hardware Swap](https://swap.hackclub.com/). Watch the bakery, post office and toy shop windows light up, then ring their doorbells in the same order. The route grows from two stops to six. Finish it to hear *Jingle Bells*.
 
-
-
-This is an 86 × 68 mm, two-layer RP2040 devboard for the Holiday Hardware Swap. Its an simple, hackable Simon says game with a Festive Decoration.
+![PCB render showing the three shops and their doorbells](media/board.png)
 
 ## Play
 
-While the windows fade, tap and release any button. Watch the Lamps. When all three Lamps settle to a steady dim glow, repeat the pattern. A missed stop will trigger the reshow of the pattern. After 45 seconds waiting for a choice, the village returns to its idle glow and the game has stopped.
+- **Start a delivery:** Plug in USB and tap any doorbell. When all three windows glow dimly, repeat the route. A wrong turn replays it.
+- **Quiet mode:** While idle, hold POST for a second and release to toggle sound on and off.
+- **Music box:** Hold BAKERY and TOYS while plugging in, then release. The doors play C, E and G as notes.
 
-- **Quiet shift.** While idle, hold POST for a second and release. All three windows flash together, and the Buzzer will no longer play a tune. Repeat to restore sound.
-- **Music box.** Hold BAKERY and TOYS while plugging in, then release them after the board starts. The butons play C, E and G. So, you can make your own tunes!
+## Hack it
 
+On a Pico H running CircuitPython, copy [code.py](firmware/code.py) onto `CIRCUITPY`. Edit `CAROL` to edit the victory tune.
 
-## Inside the village
+| Connection | Pico pins |
+| --- | --- |
+| Windows / doorbells, left to right | GP2, GP6, GP10 / GP4, GP8, GP12 |
+| Piezo | GP14 |
+| J1 expansion, top to bottom | 3V3, GP20 (SDA), GP21 (SCL), GND |
 
-| Function | Pico GPIO | Circuit |
-| --- | --- | --- |
-| The lamps | GP2, GP6, GP10 | PWM → 330 Ω → LED anode |
-| Matching doorbells | GP4, GP8, GP12 | Internal pull-up|
-| Piezo | GP14 | Variable-frequency PWM through 330 Ω |
-| J1, top to bottom on front | 3V3, GP20, GP21, GND | Regulated 3.3 V out, I²C0 SDA, I²C0 SCL |
+J1 accepts a 3.3 V I²C accessory with its own pull-ups.
 
-Use 3.3 V accessories at J1 and provide I²C pull-ups on the accessory. The board takes its power from the Pico's USB connector.
-[Pico hardware reference](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
+![Schematic showing the Pico H, lights, doorbells, piezo and expansion pads](media/schematic.png)
+
 
