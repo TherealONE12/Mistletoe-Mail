@@ -13,6 +13,6 @@ Today I planned this idea and finalised it as a SImon says/Music Box/Hackable th
 
 # November 20 Routing 
 
-Today I wired everything, wrote a small test programm and made the art. (Thanks to Hackclubs Hackercard Guide I now know how to do that!)
+Today I wired everything, wrote a small test programm and made the art.  Aslo tested it and made a simple programm for it (With a bit help of AI because it didnt compile...)
 
 **Recorded hours** — 2.5
