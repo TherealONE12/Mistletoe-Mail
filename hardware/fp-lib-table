@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "Mail")(type "KiCad")(uri "${KIPRJMOD}/lib/Mail.pretty")(options "")(descr "Mistletoe Mail footprints")))

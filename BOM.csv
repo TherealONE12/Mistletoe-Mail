@@ -1,0 +1,10 @@
+reference,part,order_quantity,unit,unit_USD,line_USD,source,notes
+PCB,Mistletoe Mail r1,1,lot of five,2.00,2.00,https://jlcpcb.com/ads/pcb-prototype,Starting price for standard two-layer FR-4. Upload gerbers.zip for actual quote
+A1,Raspberry Pi Pico H SC0917,5,each,5.00,25.00,https://www.digikey.com/en/products/detail/raspberry-pi/SC0917/16608257,RP2040 with factory headers. Solder directly to back
+SW1 SW2 SW3,Omron B3F-1000,15,each,0.299,4.49,https://www.digikey.com/en/products/detail/aratas-formerly-omron-components/B3F-1000/33150,Normally open 6 x 6 mm through-hole switch with 4.3 mm actuator
+D1 D2 D3,Kingbright WP710A10LYD,15,each,0.173,2.60,https://www.digikey.com/en/products/detail/kingbright/WP710A10LYD/2769811,Low-current yellow 3 mm LED with 2.54 mm lead spacing
+R1 R2 R3 R4,Stackpole CF14JT330R,20,each,0.027,0.54,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/CF14JT330R/1830338,330 ohms 0.25 W axial. Form leads for 7.62 mm pitch
+BZ1,TDK PS1240P02BT,5,each,0.67,3.35,https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935924,Externally driven piezo. 12.2 mm diameter with 5 mm pitch
+USB,Monoprice 5137 USB-A to Micro-B,5,each,1.19,5.95,https://www.monoprice.com/product?p_id=5137,1.5 ft power and data cable for each recipient or keeper
+Gift materials,Paper and ribbon,1,batch,1.00,1.00,,Allowance for cards and hanging loops
+Reserve,Inbound freight tax and price changes,1,batch,20.00,20.00,,Planning allowance across the orders. Actual checkout varies by destination

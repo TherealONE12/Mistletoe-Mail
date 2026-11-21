@@ -1,0 +1,17 @@
+Mail.kicad_sym, Mail.pretty and models are a project-local selection
+from the KiCad 10 symbol, footprint and 3D model libraries.
+Copyright the KiCad library contributors and credited model authors.
+Original metadata is retained in the STEP files.
+
+The local symbols and footprints use shorter names and project-relative
+references. The Pico H version omits the wireless module antenna keepout
+and unused models. The port has bare pads. The LED uses the yellow model.
+
+Distributed under CC BY-SA 4.0 with the KiCad design exception.
+The license is included in CC-BY-SA-4.0.txt.
+The exception and upstream license notice are available at
+https://www.kicad.org/libraries/license/
+Upstream collections:
+https://gitlab.com/kicad/libraries/kicad-symbols
+https://gitlab.com/kicad/libraries/kicad-footprints
+https://gitlab.com/kicad/libraries/kicad-packages3D

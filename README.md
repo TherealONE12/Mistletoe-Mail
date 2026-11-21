@@ -25,4 +25,4 @@ While the windows fade, tap and release any button. Watch the Lamps. When all th
 
 Use 3.3 V accessories at J1 and provide I²C pull-ups on the accessory. The board takes its power from the Pico's USB connector.
 [Pico hardware reference](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
-# Mistletoe-Mail
+
